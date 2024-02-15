@@ -37,7 +37,11 @@ set autoread
 set smartindent
 set background=dark
 set updatetime=100
-
+set shiftwidth=4
+set clipboard=unnamedplus
+set ttyfast
+set noswapfile
+set backupdir=~/.cache/vim
 
 " ======= COLORSCHEME =======
 "
