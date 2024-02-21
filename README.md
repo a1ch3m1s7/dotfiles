@@ -14,3 +14,9 @@
  
  *change "Plugin" to "Plug"
 
+# What to do?
+
+- [] Move to lua
+- [] Add additional plugins.
+- [] Configure support for all languages.
+
