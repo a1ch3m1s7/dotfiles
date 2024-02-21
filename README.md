@@ -16,7 +16,7 @@
 
 # What to do?
 
-- [] Move to lua
-- [] Add additional plugins.
-- [] Configure support for all languages.
+- [ ] Move to lua
+- [ ] Add additional plugins.
+- [ ] Configure support for all languages.
 
