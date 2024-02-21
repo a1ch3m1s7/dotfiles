@@ -1,31 +1,28 @@
 set nocompatible "be iMproved, required
-set exrc
 set encoding=UTF-8
-set rtp+=$HOME/.vim/bundle/Vundle.vim
-call vundle#begin('$HOME/.vim/bundle')
-
+call plug#begin(has('nvim') ? stdpath('data') . '/plugged' : '~/.vim/plugged')
 " ======= Plugins =======
 
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'vim-scripts/L9'
-Plugin 'tpope/vim-fugitive'
-Plugin 'rstacruz/sparkup', {'rtp': 'vim'}
-Plugin 'ericbn/vim-solarized'
-Plugin 'morhetz/gruvbox'
-Plugin 'itchyny/lightline.vim'
-Plugin 'fidian/hexmode.git'
-Plugin 'bluz71/vim-mistfly-statusline'
-Plugin 'airblade/vim-gitgutter.git'
+Plug 'VundleVim/Vundle.vim'
+Plug 'vim-scripts/L9'
+Plug 'tpope/vim-fugitive'
+Plug 'rstacruz/sparkup', {'rtp': 'vim'}
+Plug 'ericbn/vim-solarized'
+Plug 'morhetz/gruvbox'
+Plug 'itchyny/lightline.vim'
+Plug 'fidian/hexmode'
+Plug 'bluz71/vim-mistfly-statusline'
+Plug 'airblade/vim-gitgutter'
 
 if has('nvim') || has('patch-8.0.902')
-	Plugin 'mhinz/vim-signify' 
+	Plug 'mhinz/vim-signify' 
 else
-	Plugin 'mhinz/vim-signify', { 'tag': 'legacy' } 
+	Plug 'mhinz/vim-signify', { 'tag': 'legacy' } 
 endif
 
 
 " ======= End =======
-call vundle#end()
+call plug#end()
 
 syntax enable
 
